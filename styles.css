@@ -9,7 +9,7 @@
 
 * {
   box-sizing: border-box;
-  /* border: 2px solid red; */
+  /* border: 1px solid red; */
   font-family: "Roboto", sans-serif;
 }
 
@@ -20,13 +20,16 @@ body {
 }
 
 nav {
-  width: 20vw;
+  width: 16vw;
   height: 100vh;
   background: var(--green);
   list-style: none;
   color: white;
   font-weight: bold;
   list-style-type: none;
+  position: fixed;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 .icon-con {
@@ -49,5 +52,67 @@ nav iconify-icon {
 }
 
 #dash iconify-icon {
-  margin-left: 5px;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+#dash {
+  border-bottom: var(--blue) 5px solid;
+}
+
+nav li {
+  list-style: none;
+  width: 100%;
+  position: relative;
+}
+
+nav li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+nav li a:hover {
+  background-color: var(--blue);
+}
+
+nav li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.2s;
+}
+
+nav ul li a.toggle {
+  display: none;
+}
+
+nav.active {
+  width: 250px;
+}
+
+@media (max-width: 1075px) {
+  nav {
+    /* left: -60px; */
+    width: 55px;
+  }
+
+  #dash {
+    margin-left: 0;
+  }
+
+  nav.active {
+    left: 0;
+    /* width: 100%; */
+  }
+
+  nav ul li a.toggle {
+    display: none;
+  }
 }
