@@ -4,11 +4,13 @@
   --green: #06d6a0;
   --blue: #118ab2;
   --dark-blue: #073b4c;
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 * {
   box-sizing: border-box;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -22,4 +24,30 @@ nav {
   height: 100vh;
   background: var(--green);
   list-style: none;
+  color: white;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.icon-con {
+  display: flex;
+  align-items: center;
+}
+
+nav span {
+  margin: 10px;
+  margin-left: 20px;
+}
+
+nav iconify-icon {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.dashboard {
+  margin-left: 5px;
+}
+
+#dash iconify-icon {
+  margin-left: 5px;
 }
