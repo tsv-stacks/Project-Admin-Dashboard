@@ -1,8 +1,12 @@
-let getSidebar = document.querySelector('nav');
-let getToggle = document.getElementsByClassName('toggle');
+var getSidebar = document.querySelector('nav');
+var getToggle = document.getElementsByClassName('toggle');
 
-for (let i = 0; i <= getToggle.length; i++) {
+
+for (var i = 0; i <= getToggle.length; i++) {
     getToggle[i].addEventListener('click', function () {
-        getSidebar.classList.toggle('active');
+        if (window.innerWidth < 1075) {
+            getSidebar.classList.toggle('active');
+        }
+
     });
 }

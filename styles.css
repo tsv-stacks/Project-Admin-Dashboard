@@ -109,7 +109,6 @@ nav.active {
 
   nav.active {
     left: 0;
-    /* width: 100%; */
   }
 
   nav ul li a.toggle {
