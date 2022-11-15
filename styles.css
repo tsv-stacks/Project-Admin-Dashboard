@@ -19,6 +19,8 @@ body {
   padding: 0;
 }
 
+/* side nav bar */
+
 nav {
   width: 16vw;
   height: 100vh;
@@ -30,6 +32,7 @@ nav {
   position: fixed;
   transition: 0.5s;
   overflow: hidden;
+  z-index: 1;
 }
 
 .icon-con {
@@ -54,10 +57,6 @@ nav iconify-icon {
 #dash iconify-icon {
   margin-top: 10px;
   margin-left: 2px;
-}
-
-#dash {
-  border-bottom: var(--blue) 5px solid;
 }
 
 nav li {
@@ -97,10 +96,25 @@ nav.active {
   width: 250px;
 }
 
+/* header */
+
+header {
+  background-color: var(--orange);
+  width: 84vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-bottom: var(--blue) 5px solid;
+}
+
 @media (max-width: 1075px) {
   nav {
     /* left: -60px; */
     width: 55px;
+  }
+
+  header {
+    width: calc(100vw - 55px);
   }
 
   #dash {
