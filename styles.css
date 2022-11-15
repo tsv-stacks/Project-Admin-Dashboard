@@ -33,6 +33,9 @@ nav {
   transition: 0.5s;
   overflow: hidden;
   z-index: 1;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
 }
 
 .icon-con {
