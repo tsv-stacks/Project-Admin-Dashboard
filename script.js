@@ -1,5 +1,5 @@
 var getSidebar = document.querySelector('nav');
-var getToggle = document.getElementsByClassName('toggle');
+var getToggle = Array.from(document.getElementsByClassName('toggle'));
 
 
 for (var i = 0; i <= getToggle.length; i++) {
