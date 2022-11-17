@@ -360,10 +360,10 @@ h3 {
   vertical-align: middle;
 }
 
-.div2l p {
-  margin-top: 5px;
+.div2l h3 {
+  margin-top: 10px;
   color: black;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .div2l div a {
