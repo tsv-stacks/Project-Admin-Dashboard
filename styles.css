@@ -142,7 +142,9 @@ header {
 
 .myButton {
   background-color: var(--green);
-  border-radius: 15px;
+  height: 85%;
+  /* width: 80%; */
+  border-radius: 2px;
   font-weight: bold;
   border: 1px solid #18ab29;
   display: inline-block;
