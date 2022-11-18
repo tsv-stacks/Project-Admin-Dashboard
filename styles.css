@@ -349,21 +349,54 @@ h3 {
 
 /* links grid */
 
+.parent-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: white;
+}
+
+.section-footer p {
+  margin: 0;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.div1l {
+  border: var(--pink) 3px solid;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
 .div2l {
-  display: inline-block;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px auto;
+  /* margin: px; */
+  border: var(--pink) 3px solid;
 }
 
 .div2l iconify-icon {
   vertical-align: middle;
 }
 
-.div2l h3 {
+.parent-links h3 {
   margin-top: 10px;
   color: black;
   margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.div2l div:not(:first-child) {
+  border-bottom: #118ab2 solid 2px;
 }
 
 .div2l div a {
@@ -371,6 +404,11 @@ h3 {
   color: #073b4c;
   text-decoration: none;
   font-weight: bold;
+}
+
+.div2l div a:hover {
+  background-color: var(--dark-blue);
+  color: white;
 }
 
 @media (max-width: 1075px) {
