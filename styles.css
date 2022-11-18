@@ -23,6 +23,7 @@ body {
 
 nav {
   width: 16vw;
+  max-width: 176px;
   height: 100vh;
   background: var(--green);
   list-style: none;
@@ -126,12 +127,10 @@ nav.active {
 header {
   padding-top: 5px;
   background-color: white;
-  width: 84vw;
-  /* position: fixed; */
-  padding-left: 55px;
+  width: 100vw;
+  padding-left: 176px;
   right: 0;
   top: 0;
-  /* border-bottom: var(--blue) 5px solid; */
 }
 
 .center {
@@ -168,6 +167,7 @@ header {
 
 .parent-header {
   display: grid;
+  /* width: calc(100vw - 176px); */
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 5px;
@@ -180,7 +180,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  grid-area: 1 / 1 / 2 / 4;
+  grid-area: 1 / 6 / 2 / 7;
 }
 
 .div1h img {
@@ -191,16 +191,19 @@ header {
   margin-left: 5px;
 }
 .div2h {
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: middle;
   grid-area: 1 / 4 / 2 / 5;
 }
 .div3h {
   grid-area: 1 / 5 / 2 / 6;
 }
 .div4h {
-  grid-area: 1 / 6 / 2 / 7;
+  grid-area: 2 / 1 / 3 / 4;
 }
 .div5h {
-  grid-area: 2 / 1 / 3 / 4;
+  grid-area: 1 / 1 / 2 / 4;
 }
 .div6h {
   grid-area: 2 / 4 / 3 / 5;
@@ -269,9 +272,9 @@ header {
 /* projects grid */
 
 main {
-  margin-left: 55px;
+  margin-left: 176px;
   overflow-y: auto;
-  max-height: 700px;
+  /* max-height: 700px; */
 }
 
 main p {
@@ -352,7 +355,7 @@ h3 {
 .parent-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   background-color: white;
@@ -419,6 +422,12 @@ h3 {
 
   header {
     width: calc(100vw - 55px);
+    padding-left: 55px;
+  }
+
+  main {
+    margin-left: 55px;
+    padding-left: 5px;
   }
 
   #dash {
@@ -463,6 +472,7 @@ h3 {
     max-height: 100%;
     /* padding-top: 120px; */
     right: 0;
+    margin-left: 55px;
     padding-left: 5px;
     overflow-y: auto;
   }
@@ -530,7 +540,7 @@ h3 {
   .parent-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
   }
