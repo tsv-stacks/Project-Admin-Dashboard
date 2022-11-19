@@ -124,6 +124,10 @@ nav.active {
 
 /* header */
 
+.bold {
+  font-weight: bold;
+}
+
 header {
   padding-top: 5px;
   background-color: white;
@@ -380,6 +384,10 @@ h3 {
 
 /* links grid */
 
+.parent-links * {
+  border: red 2px solid;
+}
+
 .parent-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -395,28 +403,29 @@ h3 {
   margin-left: 5px;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .div1l {
   border: var(--pink) 3px solid;
   font-size: small;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  /* display: flex; */
 }
 
 .div2l {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  /* margin: px; */
   border: var(--pink) 3px solid;
 }
 
 .div2l iconify-icon {
   vertical-align: middle;
+  justify-content: center;
+}
+
+.div2l div div {
+  border-bottom: #118ab2 solid 3px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .parent-links h3 {
@@ -424,10 +433,6 @@ h3 {
   color: black;
   margin-bottom: 10px;
   text-decoration: underline;
-}
-
-.div2l div:not(:first-child) {
-  border-bottom: #118ab2 solid 2px;
 }
 
 .div2l div a {
@@ -552,6 +557,31 @@ h3 {
   }
   .div8h {
     grid-area: 3 / 3 / 4 / 4;
+  }
+
+  .div1l {
+    border: var(--pink) 3px solid;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .div2l {
+    display: inline-flex;
+    flex-direction: column !important;
+    align-items: center;
+    /* margin: px; */
+    border: var(--pink) 3px solid;
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div2l div div {
+    border-bottom: #118ab2 solid 2px;
   }
 }
 
